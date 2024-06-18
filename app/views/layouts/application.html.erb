@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TwitterClone</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+  #以下、ヘッダーとフッターを投入
+  <header>
+    <div class="header-container">
+      <h1>TwitterClone</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/tweets/new">New Tweet</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <%= yield %>
+
+    <footer>
+    <div class="footer-container">
+      <p>&copy; 2024 TwitterClone. All rights reserved.</p>
+    </div>
+  </footer>
+  </body>
+</html>

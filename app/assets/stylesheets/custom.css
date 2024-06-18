@@ -1,0 +1,46 @@
+/* custom.css */
+
+/* ヘッダースタイル */
+.header-container {
+    background-color: #1da1f2;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-container h1 {
+    margin: 0;
+  }
+  
+  .header-container nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .header-container nav ul li {
+    margin-left: 20px;
+  }
+  
+  .header-container nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .header-container nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* フッタースタイル */
+  .footer-container {
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
