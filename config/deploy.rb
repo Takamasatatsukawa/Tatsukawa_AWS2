@@ -7,6 +7,7 @@ set :repo_url, "https://github.com/Takamasatatsukawa/Tatsukawa_AWS2.git"
  set :keep_releases, 5   # 6
  set :rbenv_ruby, '3.3.0'    # 7
  set :log_level, :info   # 8
+ set :linked_files, %w{.env}
 
  after 'deploy:published', 'deploy:seed'   # 9
  after 'deploy:finished', 'deploy:restart'   # 10
