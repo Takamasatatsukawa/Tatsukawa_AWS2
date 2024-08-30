@@ -3,7 +3,6 @@ lock "~> 3.19.1"
 
 set :application, "tweeet_app"
 set :repo_url, "https://github.com/Takamasatatsukawa/Tatsukawa_AWS2.git"
-set :linked_files, %w{config/secrets.yml}   # 4
  set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}   # 5
  set :keep_releases, 5   # 6
  set :rbenv_ruby, '3.3.0'    # 7
@@ -28,7 +27,7 @@ set :linked_files, %w{config/secrets.yml}   # 4
      invoke 'unicorn:restart'
    end
  end
- 
+
 set :bundle_without, %w{test}.join(':')
 set :branch, "main"
 
