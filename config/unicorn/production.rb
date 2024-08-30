@@ -1,10 +1,10 @@
 worker_processes  2   # 1
- working_directory "/var/www/tweet_app/current"    # 2
+ working_directory "/var/www/tweeet_app/current"    # 2
  stderr_path "log/unicorn.stderr.log"    # 3
  stdout_path "log/unicorn.stdout.log"    # 4
  timeout 30    # 5
- listen "/var/www/tweet_app/current/tmp/sockets/unicorn.sock"    # 6
- pid '/var/www/tweet_app/current/tmp/pids/unicorn.pid'   # 7
+ listen "/var/www/tweeet_app/current/tmp/sockets/unicorn.sock"    # 6
+ pid '/var/www/tweeet_app/current/tmp/pids/unicorn.pid'   # 7
  preload_app true    # 8
 
  before_fork do |server, worker|   # 9
