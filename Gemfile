@@ -2,6 +2,17 @@ source "https://rubygems.org"
 
 ruby "3.3.0"
 
+gem 'unicorn'  # 追記
+
+ group :development, :test do
+   # 省略
+ end
+
+ group :development do
+   # 省略
+   gem 'capistrano3-unicorn'   # 追記
+ end
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.4"
 
