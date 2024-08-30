@@ -51,7 +51,7 @@
 # ------------------------------------
  server "13.230.180.62",
    user: "ec2-user",
-   roles: %w{web app},
+   roles: %w{web db app},
    ssh_options: {
      user: "ec2-user", # overrides user setting above
      keys: %w(/Users/takamasa/.ssh/tatsukwa_sample.pem),
